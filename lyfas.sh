@@ -199,6 +199,7 @@ echo "警告！MariaDB初始化失败！请手动启动MariaDB查看失败原因
 exit;0
 fi
 mysqladmin -u root password "$lysqlpass" #创建数据库密码
+mysql -u root -p$lysqlpass -e "drop database vpndata;" #删除默认test数据库
 mysql -u root -p$lysqlpass -e "create database vpndata;" #创建vpndata数据表
 #mysql -u root -p$lysqlpass -e "drop database test;" #删除默认test数据库
 systemctl restart mariadb.service >/dev/null 2>&1
