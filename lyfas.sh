@@ -173,6 +173,7 @@ function ly02() {
 #--force --nodeps
 #安装epel仓库
 yum -y install epel-release
+rpm -Va --nofiles --nodigest
 #yum -y install openssl openssl-libs openssl-devel lzo lzo-devel pam pam-devel automake pkgconfig  gawk tar zip unzip  net-tools psmisc gcc httpd libxml2 libxml2-devel  bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel dnsmasq iptables iptables-services
 #安装筑梦官方所需环境
 yum remove php-common -y
