@@ -176,7 +176,7 @@ yum -y install epel-release
 rpm -Va --nofiles --nodigest
 #yum -y install openssl openssl-libs openssl-devel lzo lzo-devel pam pam-devel automake pkgconfig  gawk tar zip unzip  net-tools psmisc gcc httpd libxml2 libxml2-devel  bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel dnsmasq iptables iptables-services
 #安装筑梦官方所需环境
-yum remove php-common -y
+#yum remove php-common -y
 yum -y install telnet avahi openssl openssl-libs openssl-devel lzo lzo-devel pam pam-devel automake pkgconfig gawk tar zip unzip net-tools psmisc gcc pkcs11-helper mariadb mariadb-server httpd libxml2 libxml2-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel dnsmasq jre-1.7.0-openjdk
 #安装PHP环境（这里使用的是第三方PHP安装源，并非筑梦官方安装源，此项并不影响正常安装使用使用）
 #安装PHP7.0，暂时不考虑PHP7.1   反正够用了，如您业务需要，请自行卸载PHP7.0版本安装PHP7.1版本即可
